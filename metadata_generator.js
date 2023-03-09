@@ -40,7 +40,7 @@ function createJSONFiles(event) {
       .then(function(content) {
         saveAs(content, `${nftName}.zip`);
       });
-}
+};
   
 // Call createJSONFiles function on button click
 document.getElementById("form").addEventListener("submit", createJSONFiles);
