@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Create JSON Files</title>
     <style>
-      body {
-        background-color: black;
-        color: white;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            display: block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
     </style>
-  </head>
-  <body>
-    <form id="form">
-      <label for="traitQty">How many traits do you want?</label><br>
-      <input type="number" id="traitQty" name="traitQty" required><br><br>
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <label for="traitQty">How many traits do you want?</label>
+            <input type="number" id="traitQty" name="traitQty" required>
 
-      <div id="traitNamesDiv"></div>
+            <div id="traitNamesDiv"></div>
 
-      <label for="nftQty">How many NFTs does your collection hold?</label><br>
-      <input type="number" id="nftQty" name="nftQty" required><br><br>
+            <label for="nftQty">How many NFTs does your collection hold?</label>
+            <input type="number" id="nftQty" name="nftQty" required>
 
-      <label for="description">Enter a description for the NFTs:</label><br>
-      <input type="text" id="description" name="description" required><br><br>
+            <label for="description">Enter a description for the NFTs:</label>
+            <input type="text" id="description" name="description" required>
 
-      <label for="nftName">Enter a name for the NFTs:</label><br>
-      <input type="text" id="nftName" name="nftName" required><br><br>
+            <label for="nftName">Enter a name for the NFTs:</label>
+            <input type="text" id="nftName" name="nftName" required>
 
-      <button type="submit">Generate JSON Files</button>
-    </form>
+            <button type="submit">Generate JSON Files</button>
+        </form>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <script src="metadata_generator.js"></script>
-  </body>
+</body>
 </html>
