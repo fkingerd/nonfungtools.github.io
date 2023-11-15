@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NFT Image Downloader</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="NFT Image Downloader for MultiversX">
+  <meta name="keywords" content="NFT, Image Downloader, MultiversX">
+  <meta name="author" content="NFTools">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #555;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+    }
+    label, input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>NFT Image Downloader</h1>
+    <form id="nftForm">
+      <label for="erd">Enter ERD:</label>
+      <input type="text" id="erd" name="erd" required>
+
+      <label for="collection">Enter Collection Name:</label>
+      <input type="text" id="collection" name="collection" required>
+
+      <button type="submit">Download Images</button>
+    </form>
+  </div>
+
+  <script>
+    async function get_png_from_nft(erd, collection) {
+      // ... JavaScript function as provided earlier ...
+    }
+
+    async function processImage(blob, img_url) {
+      // ... JavaScript function as provided earlier ...
+    }
+
+    function determineFileName(img_url) {
+      // ... JavaScript function as provided earlier ...
+    }
+
+    document.getElementById("nftForm").addEventListener("submit", async function(event) {
+      event.preventDefault();
+      const erd = document.getElementById("erd").value;
+      const collection = document.getElementById("collection").value;
+      await get_png_from_nft(erd, collection);
+    });
+  </script>
+
+  <!-- Other scripts and footer -->
+</body>
+</html>
